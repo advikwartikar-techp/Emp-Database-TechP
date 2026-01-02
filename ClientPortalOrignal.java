@@ -5,10 +5,10 @@ public class ClientPortalOrignal {
     public static void main(String[] args) {
         EmployeeStoreUsingArrayList store = new EmployeeStoreUsingArrayList();
 
-        Employee e1 = new Employee(UUID.randomUUID(), "Alice Johnson", 75000f, LocalDate.of(1988, 4, 12), "Engineering", "Seattle");
-        Employee e2 = new Employee(UUID.randomUUID(), "Bob Smith", 62000f, LocalDate.of(1990, 9, 5), "Sales", "Chicago");
-        Employee e3 = new Employee(UUID.randomUUID(), "Carol White", 82000f, LocalDate.of(1985, 1, 23), "Engineering", "Seattle");
-        Employee e4 = new Employee(UUID.randomUUID(), "Dan Brown", 54000f, LocalDate.of(1995, 7, 30), "Support", "Chicago");
+        Employee e1 = new Employee(UUID.randomUUID(), "Advik Wartikar", 75000f, LocalDate.of(1988, 4, 12), "Engineering", "Pune");
+        Employee e2 = new Employee(UUID.randomUUID(), "Shaunak Chodhankar", 62000f, LocalDate.of(1990, 9, 5), "Sales", "Mumbai");
+        Employee e3 = new Employee(UUID.randomUUID(), "Nicole Aiman", 82000f, LocalDate.of(1985, 1, 23), "Engineering", "Pune");
+        Employee e4 = new Employee(UUID.randomUUID(), "Piyush Gosavi", 54000f, LocalDate.of(1995, 7, 30), "Support", "Banglore");
 
         store.addEmployee(e1);
         store.addEmployee(e2);
@@ -41,3 +41,4 @@ public class ClientPortalOrignal {
         System.out.println(found != null ? found : "Not found");
     }
 }
+
