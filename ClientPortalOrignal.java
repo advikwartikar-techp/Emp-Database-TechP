@@ -15,7 +15,7 @@ public class ClientPortalOrignal {
         store.addEmployee(e3);
         store.addEmployee(e4);
 
-        EmployeeServiceV1 service = new EmployeeServiceV1(store);
+        EmployeeDirectory employeeService = new EmployeeServiceV1(store);
 
         System.out.println("All employees:");
         for (Employee e : service.getAllEmployees()) {
