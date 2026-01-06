@@ -85,7 +85,7 @@ public class CsvReader {
 
         for (String pat : patterns) {
             try {
-                DateTimeFormatter f = DateTimeFormatter.ofPattern(pat);
+                DateTimeFormatter f = DateTimeFormatter.ofPattern(pat); 
                 return LocalDate.parse(t, f);
             } catch (DateTimeParseException ignored) {}
         }

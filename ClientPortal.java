@@ -106,7 +106,6 @@ public class ClientPortal {
             } catch (DateTimeParseException ignored) {
             }
         }
-        // Try ISO parsing as last resort
         try {
             return LocalDate.parse(t);
         } catch (DateTimeParseException ignored) {
