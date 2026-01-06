@@ -1,2 +1,65 @@
 # Emp-Database-TechP
 Assignments and tasks done during tech prescient internship for employee databases
+┌─────────────────────────────────────┐
+│            Employee                 │
+├─────────────────────────────────────┤
+│ - id: UUID                          │
+│ - name: String                      │
+│ - salary: Float                     │
+│ - dob: LocalDate                    │
+├─────────────────────────────────────┤
+│ + Employee(id, name, salary, dob)   │
+│ + getId(): UUID                     │
+│ + getName(): String                 │
+│ + getSalary(): Float                │
+│ + getDob(): LocalDate               │
+└─────────────────────────────────────┘
+                    
+┌─────────────────────────────────────┐
+│      <<interface>>                  │
+│      EmployeeDirectory              │
+├─────────────────────────────────────┤
+│ + getEmployeeById(UUID): Employee   │
+│ + getAllEmployees(): Employee[]     │
+│ + getAllEmployeesByDept(String):    │
+│   Employee[]                        │
+│ + getAllEmployeesByCity(String):    │
+│   Employee[]                        │
+└─────────────────────────────────────┘
+                    
+┌─────────────────────────────────────┐
+│   EmployeeStoreUsingArrayList       │
+├─────────────────────────────────────┤
+│ - employees: List<Employee>         │
+├─────────────────────────────────────┤
+│ + EmployeeStoreUsingArrayList()     │
+│ + getEmployeeById(UUID): Employee   │
+│ + getAllEmployees(): Employee[]     │
+│ + getAllEmployeesByDept(String):    │
+│   Employee[]                        │
+│ + getAllEmployeesByCity(String):    │
+│   Employee[]                        │
+└─────────────────────────────────────┘
+                   
+┌─────────────────────────────────────┐
+│       EmployeeServiceV1             │ // Implements EmployeeDirectory interface
+├─────────────────────────────────────┤
+│ - employeeStore: EmployeeDirectory  │
+├─────────────────────────────────────┤
+│ + EmployeeServiceV1(EmployeeDirectory)│
+│ + getEmployeeById(UUID): Employee   │
+│ + getAllEmployees(): Employee[]     │
+│ + getAllEmployeesByDept(String):    │
+│   Employee[]                        │
+│ + getAllEmployeesByCity(String):    │
+│   Employee[]                        │
+└─────────────────────────────────────┘
+                   
+┌─────────────────────────────────────┐
+│         ClientPortal                │
+├─────────────────────────────────────┤
+│ - employeeService: EmployeeDirectory│
+├─────────────────────────────────────┤
+│ + main(args: String[]): void        │
+
+└─────────────────────────────────────┘
